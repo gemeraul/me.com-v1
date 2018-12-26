@@ -28,20 +28,23 @@ import {
 // Components
 import { ShortBioComponent } from './components/short-bio/short-bio.component';
 import { MadeOfComponent } from './components/made-of/made-of.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ShortBioComponent,
-    MadeOfComponent
+    MadeOfComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

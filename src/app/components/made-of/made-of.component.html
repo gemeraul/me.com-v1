@@ -1,3 +1,85 @@
-<p>
-  made-of works!
-</p>
+<section class="hero ">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="columns is-centered">
+        <div class="column has-text-centered title-option">
+          <mat-divider></mat-divider>
+          This is basically what I'm made of...
+        </div>
+      </div>
+
+      <div class="columns">
+        <!-- this boxes wil be a component in future -->
+        <div class="column optionBox">
+          <i class="fas fa-laptop-code fa-3x"></i>
+          <h2 class="option-title web">Coding</h2>
+          <p>I am a Software Developer and I love every second of my working day.</p>
+          <div class="info-separation">
+            <button mat-raised-button class="round-button">Currently working at : <span class="working-at">Intel</span></button>
+          </div>
+          <p>Staying up to date with technogies takes most of my afternoons tho.</p>
+          <div class="info-separation">
+            <button mat-raised-button color="primary" class="view-info" (click)="createProject('web')">
+              Read more about my work</button>
+          </div>
+
+
+        </div>
+        <div class="column optionBox">
+          <i class="fas fa-baseball-ball fa-3x"></i>
+          <h2 class="option-title ux">Tennis</h2>
+          <p>Favorite sport. I usually play with my twin brother once a week.</p>
+          <div class="info-separation">
+            <button mat-raised-button class="round-button">Next game in : <span class="playing-in">15h</span></button>
+          </div>
+          <p>I enjoy playing a lot but just so we're clear, I'm actually pretty bad :(</p>
+          <div class="info-separation">
+            <button mat-raised-button color="primary" class="view-info" (click)="createProject('design')">
+              More personal stuff</button>
+          </div>
+        </div>
+        <div class="column optionBox">
+          <i class="fas fa-gamepad fa-3x"></i>
+          <h2 class="option-title mobile">Gaming</h2>
+          <p>Any day is a good day to play videogames, especially with friends.</p>
+          <div class="info-separation">
+            <button mat-raised-button class="round-button">Check out my <span class="stream">stream</span> !</button>
+          </div>
+          <p>I play mostly on PC but I'm down to play wherever you want.</p>
+          <div class="info-separation">
+            <button mat-raised-button color="primary" class="view-info" (click)="createProject('portfolio')">
+              Send me a message to play</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Follow us section -->
+      <div class="columns is-centered">
+        <div class="column has-text-centered title-option">
+          Social media:
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <a mat-fab class="follow-icon instagram"  href="https://www.instagram.com/kingtotto/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a mat-fab class="follow-icon center twitter" href="https://twitter.com/kinggrimaldi" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a mat-fab class="follow-icon linkedin" href="https://www.linkedin.com/in/raul-grimaldi-7a782392/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <mat-divider></mat-divider>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

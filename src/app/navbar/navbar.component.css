@@ -1,6 +1,6 @@
 .navbar-menu.expanded-menu {
     margin: 5% 30% 0;
-    border-bottom: 1px solid #dad4d4;
+    border-bottom: 1px solid #e6bbbb;
     padding-bottom: 1em;
 }
 
@@ -16,7 +16,7 @@ a.navbar-item.logo:hover {
 a.navbar-item {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1em;
+    font-size: .9em;
     border-top: 1px solid rgba(219, 219, 219, 0.5);
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
@@ -41,7 +41,13 @@ a.navbar-item.is-wide {
     border-top: none;
 }
 
-button {
+a.button {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+    border-color: #e6bbbb;
+}
+
+a.button:hover {
+    border-color: #e29696;
+    background-color: #fdf1f1;
 }
