@@ -1,0 +1,18 @@
+.hero-body {
+    padding-top: 2rem;
+}
+.subt-main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-weight: 100;
+    cursor: default;
+}
+
+.title-main {
+    color: #767782;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    cursor: default;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,47 @@
+<nav class="navbar is-blue">
+  <!-- logo -->
+  <div class="navbar-brand">
+    <a routerLink="home" class="navbar-item logo">
+      <img src="assets/img/titania-logo.svg">
+    </a>
+    <a role="button" class="navbar-burger" [ngClass]="{'is-active': active}" aria-label="menu" aria-expanded="false"
+      (click)="activateMenu()">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu" [ngClass]="{'is-active': active, 'expanded-menu': !active}">
+    <div class="navbar-start">
+      <a routerLink="home" *ngIf="!active" class="navbar-item logo" [ngClass]="{'is-wide': !active}">
+        <img src="assets/img/titania-logo.svg">
+      </a>
+      <a routerLink="work" class="navbar-item" [ngClass]="{'is-wide': !active}">WORK</a>
+      <a routerLink="about" class="navbar-item" [ngClass]="{'is-wide': !active}">ABOUT</a>
+      <a routerLink="contact" class="navbar-item" [ngClass]="{'is-wide': !active}">CONTACT</a>
+    </div>
+    <div class="navbar-end ">
+      <span class="navbar-item" [ngClass]="{'right-separation': !active}">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="button is-google" href="https://www.instagram.com/kingtotto/" target="_blank">
+              <span class="icon">
+                <i class="fab fa-instagram"></i>
+              </span>
+            </a>
+          </p>
+
+          <p class="control">
+            <a class="button is-linkedin" href="https://www.linkedin.com/in/raul-grimaldi-7a782392/" target="_blank">
+              <span class="icon">
+                <i class="fab fa-linkedin-in"></i>
+              </span>
+            </a>
+          </p>
+        </div>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<app-short-bio></app-short-bio>
