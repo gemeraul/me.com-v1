@@ -9,3 +9,13 @@ footer p {
     font-weight: 100;
     cursor: default;
 }
+
+.comp-link {
+    color: #4a4a4a;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.comp-link:hover {
+    color: #dab7b7;
+}
