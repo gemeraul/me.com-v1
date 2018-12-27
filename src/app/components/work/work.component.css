@@ -12,6 +12,14 @@
     margin-bottom: .5em;
 }
 
+.title-talk {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    cursor: default;
+    margin-bottom: .5em;
+}
+
 .column.divider-col {
     display: flex;
     flex-direction: column;
@@ -24,6 +32,10 @@ mat-divider {
     background-color: #c5cff5;
     max-width: 1000px;
     width: 100%;
+}
+
+.resume-text mat-divider {
+    background-color: #c5c5c5;
 }
 
 .banner-starwars {
@@ -79,7 +91,6 @@ h4.content {
 .resume-text {
     margin-top: 2em;
     padding-bottom: 3rem;
-    border-bottom: 1px solid #a1acda;
 }
 
 .work-text {
@@ -88,7 +99,23 @@ h4.content {
 }
 
 .border-left {
-    border-left: 1px solid #a1acda;
+    border-left: 1px solid #aaadb7;
+}
+
+button.contact {
+    color: #7890a0;
+    font-weight: 400;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+button.contact:hover {
+    background-color: #92acbd;
+    color: white;
+}
+
+.separation-bottom {
+    margin-bottom: 3rem;
 }
 
 mat-list-item h4.content {
