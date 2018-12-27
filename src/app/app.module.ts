@@ -34,6 +34,10 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
 import { WorkComponent } from './components/work/work.component';
+import { AboutComponent } from './components/about/about.component';
+
+// Services
+import { CycleItemsService } from './services/cycle-items.service';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,8 @@ import { WorkComponent } from './components/work/work.component';
     FooterComponent,
     ContactComponent,
     SocialMediaComponent,
-    WorkComponent
+    WorkComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +65,7 @@ import { WorkComponent } from './components/work/work.component';
     MatTooltipModule,
     MatListModule
   ],
-  providers: [],
+  providers: [CycleItemsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

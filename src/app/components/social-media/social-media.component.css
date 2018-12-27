@@ -3,6 +3,7 @@
     font-size: 1.3em;
     font-weight: 100;
     cursor: default;
+    padding-bottom: 0;
 }
 
 .follow-icon {
@@ -40,7 +41,7 @@
 }
 
 mat-divider {
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     background-color: #c5cff5;
     max-width: 1000px;
     width: 100%;
@@ -51,4 +52,8 @@ mat-divider {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.icons-col {
+    margin-bottom: 1rem;
 }
