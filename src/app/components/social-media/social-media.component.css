@@ -1,0 +1,54 @@
+.title-option {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight: 100;
+    cursor: default;
+}
+
+.follow-icon {
+    background-color: white;
+    color: #fcd840;
+    font-size: 1.2em;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    margin: 0 10px;
+}
+
+.follow-icon.center {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.follow-icon.instagram:hover {
+    background-color: #ff97b3;
+    color: white;
+}
+
+.follow-icon.twitter:hover {
+    background-color: #38A1F3;
+    color: white;
+}
+
+.follow-icon.linkedin:hover {
+    background-color: #0077B5;
+    color: white;
+}
+
+.follow-icon.twitch:hover {
+    background-color: #6441A4 ;
+    color: white;
+}
+
+mat-divider {
+    margin-bottom: 2rem;
+    background-color: #c5cff5;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.column.divider-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

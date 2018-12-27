@@ -1,0 +1,54 @@
+.hero-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    cursor: default;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    cursor: default;
+    margin-bottom: 1%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    cursor: default;
+}
+
+.send {
+    width: 70%;  
+}
+
+.full-width {
+    width: 70%;
+}
+
+.title-option {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    font-weight: 100;
+    cursor: default;
+}
+
+mat-divider {
+    margin-bottom: 2rem;
+    background-color: #c5cff5;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.column.divider-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

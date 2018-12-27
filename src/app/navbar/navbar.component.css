@@ -1,7 +1,8 @@
 .navbar-menu.expanded-menu {
-    margin: 5% 30% 0;
+    margin: 5% 0 0;
     border-bottom: 1px solid #e6bbbb;
     padding-bottom: 1em;
+    max-width: 762px;
 }
 
 .navbar-item img {
@@ -50,4 +51,8 @@ a.button {
 a.button:hover {
     border-color: #e29696;
     background-color: #fdf1f1;
+}
+
+.navbar {
+    justify-content: center;
 }

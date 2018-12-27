@@ -1,0 +1,74 @@
+<section class="hero ">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="columns is-centered">
+        <div class="column has-text-centered divider-col">
+          <mat-divider></mat-divider>
+          <h1>Contact Me</h1>
+          <!-- <p class="">We are more than excited to hear from you on what cool projects we can work together. Send us a
+            message with a description of what your project entails and we will respond as soon as possible with a
+            quick
+            summary of what we could plan on building.
+          </p> -->
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2>Fill out the form below :</h2>
+          <form #heroForm="ngForm" [formGroup]="contactFormGroup">
+            <div class="columns is-centered">
+              <div class="column is-4">
+                <mat-form-field class="full-width">
+                  <input matInput placeholder="Your name" required formControlName="fullName">
+                  <mat-icon matSuffix>person</mat-icon>
+                  <mat-error>What is your name?</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+
+            <div class="columns is-centered">
+              <div class="column is-4">
+                <mat-form-field class="full-width">
+                  <input matInput placeholder="Your email" [formControl]="emailControl" required>
+                  <mat-icon matSuffix>email</mat-icon>
+                  <mat-error *ngIf="emailControl.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+
+            <div class="columns is-centered">
+              <div class="column is-4">
+                <mat-form-field class="full-width">
+                  <textarea matTextareaAutosize matInput placeholder="Write stuff..." required formControlName="description"></textarea>
+                  <mat-error>No empty messages :(</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+
+            <div class="columns is-centered">
+              <div class="column is-4">
+                <button mat-raised-button matTooltip="Click here to send us an email" [matTooltipPosition]="'after'"
+                  aria-label="Button that submits info filled out in form above" class="send" color="primary" (click)="submitContactForm(); heroForm.reset()"
+                  [disabled]="!contactFormGroup.valid">
+                  Submit
+                </button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <app-social-media></app-social-media>
+      <!-- <div class="columns is-centered">
+        <div class="column has-text-centered divider-col">
+          <mat-divider></mat-divider>
+        </div>
+      </div> -->
+
+
+
+    </div>
+
+  </div>
+</section>

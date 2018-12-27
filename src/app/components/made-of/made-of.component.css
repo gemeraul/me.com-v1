@@ -10,20 +10,32 @@
     cursor: default;
 }
 
+.column.divider-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 mat-divider {
     margin-bottom: 2rem;
-    background-color: #c5cff5
+    background-color: #c5cff5;
+    max-width: 1000px;
+    width: 100%;
 }
 
 .optionBox .fas {
     color: #4f5e96;
 }
 
-.optionBox {
+.columns div.column.optionBox {
+    max-width: 411px;
+}
+
+.optionBox {    
     text-align: center;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
-    cursor: pointer;
     box-shadow: 0 10px 30px 0 rgba(0,0,0,.1);
     margin: 2em;
     padding: 2em;
@@ -77,6 +89,7 @@ mat-divider {
     font-size: 1.2em;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+    margin: 0 10px;
 }
 
 .follow-icon.center {
@@ -96,5 +109,10 @@ mat-divider {
 
 .follow-icon.linkedin:hover {
     background-color: #0077B5;
+    color: white;
+}
+
+.follow-icon.twitch:hover {
+    background-color: #6441A4 ;
     color: white;
 }

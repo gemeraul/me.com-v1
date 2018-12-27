@@ -1,0 +1,111 @@
+.hero-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.title-option {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    cursor: default;
+    color: white;
+    margin-bottom: .5em;
+}
+
+.column.divider-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-divider {
+    margin-bottom: 1rem;
+    background-color: #c5cff5;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.banner-starwars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+    height: 375px;
+    background-image: url(../../../assets/img/starwars.jpg);
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,.1);
+}
+
+.is-9 {
+    max-width: 1000px;
+}
+
+.download {
+    color: white;
+    border: 2px solid white;
+    padding: 21px 24px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    max-width: 250px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.download:hover {
+    color: #fcd840;
+    background-color: white;
+}
+
+.label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+h4.content {
+    font-weight: 300;
+}
+
+.resume-text {
+    margin-top: 2em;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #a1acda;
+}
+
+.work-text {
+    padding-left: 2em;    
+    padding-bottom: 2rem;
+}
+
+.border-left {
+    border-left: 1px solid #a1acda;
+}
+
+mat-list-item h4.content {
+    font-family: 'Roboto', sans-serif;
+    font-size: .9em;
+    font-weight: 100;
+}
+
+mat-list-item p.content {
+    font-family: 'Roboto', sans-serif;
+    font-size: .7em !important;
+    font-weight: 300;
+}
+
+::ng-deep .mat-list-text {
+    padding-left: 0 !important;
+}
+
+::ng-deep .mat-list-item.mat-2-line {
+    height: 48px !important;
+}

@@ -1,0 +1,101 @@
+<section class="hero ">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="columns is-centered">
+        <div class="column has-text-centered divider-col">
+          <mat-divider></mat-divider>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column has-text-centered is-9 banner-starwars">
+          <h1 class="title-option">For your consideration</h1>
+          <div class="download">Download Resume</div>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column is-9 resume-text">
+          <div class="columns is-centered">
+            <div class="column is-3">
+              <h1 class="col-tag label">Technologies</h1>
+            </div>
+            <div class="column is-3 border-left">
+              <mat-list>
+                <h3 mat-subheader>Confort Languages:</h3>
+                <mat-list-item *ngFor="let item of languages">
+                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                  <h4 class="content" mat-line>{{item.name}}</h4>
+                  <p class="content" mat-line> Since: {{item.yearsExp | date:'yyyy'}} </p>
+                </mat-list-item>
+              </mat-list>
+            </div>
+            <div class="column is-3 ">
+              <mat-list>
+                <h3 mat-subheader>Dev Tools:</h3>
+                <mat-list-item *ngFor="let item of tools">
+                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                  <h4 class="content" mat-line>{{item.name}}</h4>
+                  <p class="content" mat-line> Since: {{item.yearsExp | date:'yyyy'}} </p>
+                </mat-list-item>
+              </mat-list>
+            </div>
+            <div class="column is-3 ">
+              <mat-list>
+                <h3 mat-subheader>Frameworks:</h3>
+                <mat-list-item *ngFor="let item of frameworks">
+                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                  <h4 class="content" mat-line>{{item.name}}</h4>
+                  <p class="content" mat-line> Since: {{item.yearsExp | date:'yyyy'}} </p>
+                </mat-list-item>
+              </mat-list>
+            </div>
+          </div>
+
+          <!-- Next row -->
+          <div class="columns is-centered">
+            <div class="column is-3 border-right">
+              <h1 class="col-tag label">Work Experience</h1>
+            </div>
+            <div class="column is-9 work-text border-left">
+              <mat-divider></mat-divider>
+              <h3>Intel Costa Rica | 2018 - Present </h3>
+              <h4 class="content">Software Development Engineer</h4>
+              <p class="content">Developed new solutions and functionalities for UI component of pre-silicon validation
+                testing software made with Angular 7.</p>
+              <p class="content">Won 2nd place in company’s Innovation Project Challenge by designing an application
+                that used Angular 6 for frontend and a backend which was integrated with Google’s Speech API package
+                and IBM’s Watson sentiment analysis service.</p>
+              <mat-divider></mat-divider>
+              <h3>Intel Costa Rica | 2016 - 2018 </h3>
+              <h4 class="content">Application Developer</h4>
+              <p class="content">Developed PoC application’s architecture which had performance testing of over 5000+
+                concurrent users and was a Cloud ready solution. </p>
+              <p class="content"> Integrated frontend code using Angular to backend services written in C# and NodeJs.
+                Projects have also included using both MongoDB and SQL databases for its services.</p>
+              <p class="content"> Helped Intel Developer group by writing and publishing several articles on best
+                practices and reusable code examples. Some examples include implementation of a .ICO file generator for
+                a NodeJs backend and documented and presented a solution for application logging data using the Elastic
+                stack (Elasticsearch, Kibana, Logstash) in Intel’s Innovation event.</p>
+              <p class="content"> Leaded efforts that allowed team to achieve +80% Unit Test coverage on release of
+                application code</p>
+              <mat-divider></mat-divider>
+              <h3>Intel Costa Rica | 2015 - 2016 </h3>
+              <h4 class="content">QA Analyst Student</h4>
+              <p class="content"> Developed and maintained a testing framework, wrote scripts for performance
+                testing and functional testing of several applications using tools like Selenium and Python. </p>
+              <p class="content">Performed stress testing and performance testing using Gatling and scala scripts for
+                internal applications and presented detailed metrics to stakeholders.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <app-social-media></app-social-media>
+
+    </div>
+  </div>
+</section>
