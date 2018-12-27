@@ -68,7 +68,7 @@ mat-divider {
 }
 
 .download:hover {
-    color: #fcd840;
+    color: rgba(0,0,0,.54);
     background-color: white;
 }
 
