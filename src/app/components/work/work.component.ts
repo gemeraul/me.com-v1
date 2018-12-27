@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 export interface Section {
   name: string;
@@ -79,9 +80,13 @@ export class WorkComponent implements OnInit {
     }    
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goTo(page) {
+    this.router.navigateByUrl('/' + page);
   }
 
 }
