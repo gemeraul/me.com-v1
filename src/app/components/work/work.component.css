@@ -34,6 +34,7 @@ mat-divider {
     background-size:cover;
     height: 375px;
     background-image: url(../../../assets/img/starwars.jpg);
+    background-color: #d4d4d4;
     box-shadow: 0 10px 30px 0 rgba(0,0,0,.1);
 }
 
