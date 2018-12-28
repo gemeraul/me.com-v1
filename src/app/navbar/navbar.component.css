@@ -5,6 +5,10 @@
     max-width: 762px;
 }
 
+.navbar.is-blue {
+    background-color: white;
+}
+
 .navbar-item img {
     max-height: 2rem;
     margin-right: 1em;
