@@ -16,9 +16,9 @@
       <a routerLink="home" *ngIf="!active" class="navbar-item logo" [ngClass]="{'is-wide': !active}">
         <img src="assets/img/raul-logo.png">
       </a>
-      <a routerLink="work" class="navbar-item" [ngClass]="{'is-wide': !active}">WORK</a>
-      <a routerLink="about" class="navbar-item" [ngClass]="{'is-wide': !active}">ABOUT</a>
-      <a routerLink="contact" class="navbar-item" [ngClass]="{'is-wide': !active}">CONTACT</a>
+      <a routerLink="work" class="navbar-item" [ngClass]="{'is-wide': !active}" (click)="activateMenu()">WORK</a>
+      <a routerLink="about" class="navbar-item" [ngClass]="{'is-wide': !active}" (click)="activateMenu()">ABOUT</a>
+      <a routerLink="contact" class="navbar-item" [ngClass]="{'is-wide': !active}" (click)="activateMenu()">CONTACT</a>
     </div>
     <div class="navbar-end ">
       <span class="navbar-item" [ngClass]="{'right-separation': !active}">

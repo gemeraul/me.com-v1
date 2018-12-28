@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
   }
 
   activateMenu() {
-    this.active = !this.active
+    this.active = !this.active;
   }
 
 }
