@@ -5,7 +5,9 @@ import { Observable } from 'rxjs';
 export class CycleItemsService {
 
   counter = 0;
-  items = ['Gaming', 'Cooking', 'Tennis', 'Software', 'Formula 1', 'League of Legends', 'Barcelona', 'Fútbol', 'Team Liquid', 'E-sports', 'Star Wars', 'Space stuff'];
+  items = ['Gaming', 'Cooking', 'Tennis', 'Software', 'Formula 1', 'League of Legends', 'Barcelona', 'Fútbol', 'Team Liquid',
+    'E-sports', 'Star Wars', 'Space stuff', 'Clash Royale', 'Piza', 'Batman', 'Movies', 'Toy Story', 'Sushi', 'Angular',
+    'Netflix', 'Brunch', 'Christmas'];
 
   constructor() { }
 
@@ -17,7 +19,7 @@ export class CycleItemsService {
           observer.next(this.items[this.counter]);
           this.counter++;
           if (this.counter >= this.items.length) { this.counter = 0 }
-        }, 250);
+        }, 100);
       }
     );
   }

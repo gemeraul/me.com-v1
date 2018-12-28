@@ -24,7 +24,7 @@ export class AboutComponent implements OnInit {
     const hours = this.today.getHours();
     if (hours <= 12) {
       this.greeting = 'Buenos días !';
-    } else if (hours > 18) {
+    } else if (hours >= 18) {
       this.greeting = 'Buenas noches !';
     } else {
       this.greeting = 'Buenas tardes !';

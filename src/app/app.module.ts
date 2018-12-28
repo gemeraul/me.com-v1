@@ -39,6 +39,11 @@ import { AboutComponent } from './components/about/about.component';
 // Services
 import { CycleItemsService } from './services/cycle-items.service';
 
+// Firebase
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +68,10 @@ import { CycleItemsService } from './services/cycle-items.service';
     MatFormFieldModule,
     MatInputModule,
     MatTooltipModule,
-    MatListModule
+    MatListModule,
+    MatSnackBarModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [CycleItemsService],
   bootstrap: [AppComponent]

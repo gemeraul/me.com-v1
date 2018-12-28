@@ -2,7 +2,7 @@
   <!-- logo -->
   <div class="navbar-brand">
     <a routerLink="home" class="navbar-item logo">
-      <img src="assets/img/titania-logo.svg">
+      <img src="assets/img/raul-logo.png">
     </a>
     <a role="button" class="navbar-burger" [ngClass]="{'is-active': active}" aria-label="menu" aria-expanded="false"
       (click)="activateMenu()">
@@ -14,7 +14,7 @@
   <div class="navbar-menu" [ngClass]="{'is-active': active, 'expanded-menu': !active}">
     <div class="navbar-start">
       <a routerLink="home" *ngIf="!active" class="navbar-item logo" [ngClass]="{'is-wide': !active}">
-        <img src="assets/img/titania-logo.svg">
+        <img src="assets/img/raul-logo.png">
       </a>
       <a routerLink="work" class="navbar-item" [ngClass]="{'is-wide': !active}">WORK</a>
       <a routerLink="about" class="navbar-item" [ngClass]="{'is-wide': !active}">ABOUT</a>
