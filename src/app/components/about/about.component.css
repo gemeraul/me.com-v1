@@ -62,3 +62,13 @@ button.work:hover {
     background-color: #92acbd;
     color: white;
 }
+
+.git-link {
+    color: #4a4a4a;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.git-link:hover {
+    color: #dab7b7;
+}
