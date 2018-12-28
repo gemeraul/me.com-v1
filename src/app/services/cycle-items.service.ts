@@ -5,9 +5,9 @@ import { Observable } from 'rxjs';
 export class CycleItemsService {
 
   counter = 0;
-  items = ['Gaming', 'Cooking', 'Tennis', 'Software', 'Formula 1', 'League of Legends', 'Barcelona', 'Fútbol', 'Team Liquid',
-    'E-sports', 'Star Wars', 'Space stuff', 'Clash Royale', 'Piza', 'Batman', 'Movies', 'Toy Story', 'Sushi', 'Angular',
-    'Netflix', 'Brunch', 'Christmas'];
+  items = ['Gaming', 'Cooking', 'Tennis', 'Software', 'Formula 1', 'Thresh', 'Barcelona', 'Fútbol', 'Team Liquid',
+    'E-sports', 'Star Wars', 'Space stuff', 'Clash Royale', 'Pizza', 'Batman', 'Movies', 'Toy Story', 'Sushi', 'Angular',
+    'Netflix', 'Brunch', 'Christmas', 'Lulu', 'Driving', 'Her', 'Writing'];
 
   constructor() { }
 
