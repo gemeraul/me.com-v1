@@ -1,8 +1,10 @@
-.navbar-menu.expanded-menu {
-    margin: 5% 0 0;
-    border-bottom: 1px solid #c2c2c2;
-    padding-bottom: 1em;
-    max-width: 762px;
+@media screen and (min-width: 1088px) {
+    .navbar-menu.expanded-menu {
+        margin: 5% 0 0;
+        border-bottom: 1px solid #c2c2c2;
+        padding-bottom: 1em;
+        max-width: 762px;
+    }
 }
 
 .navbar.is-blue {
@@ -32,12 +34,19 @@ a.navbar-item:hover {
     color: #4a4a4a;
 }
 
-a.navbar-item.is-wide {
-    border-top: none;
-}
+
 
 @media screen and (min-width: 1088px) {
     .navbar-brand .navbar-item.logo {
+        display: none;
+    }
+    a.navbar-item {
+        border-top: none;
+    }
+}
+
+@media screen and (max-width: 1088px) {
+    .navbar-start .navbar-item.logo {
         display: none;
     }
 }

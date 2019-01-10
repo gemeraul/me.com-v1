@@ -11,9 +11,9 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu" [ngClass]="{'is-active': active, 'expanded-menu': !active}">
+  <div class="navbar-menu expanded-menu" [ngClass]="{'is-active': active}">
     <div class="navbar-start">
-      <a routerLink="home" *ngIf="!active" class="navbar-item logo" [ngClass]="{'is-wide': !active}">
+      <a routerLink="home" class="navbar-item logo" [ngClass]="{'is-wide': !active}">
         <img src="assets/img/raul-logo.png">
       </a>
       <a routerLink="work" class="navbar-item" [ngClass]="{'is-wide': !active}" (click)="activateMenu()">WORK</a>

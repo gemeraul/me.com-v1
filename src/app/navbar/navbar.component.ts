@@ -15,6 +15,7 @@ export class NavbarComponent implements OnInit {
   }
 
   activateMenu() {
+    console.log('im activated')
     this.active = !this.active;
   }
 
