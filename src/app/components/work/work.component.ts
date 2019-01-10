@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AngularFireStorage } from '@angular/fire/storage';
+import { Observable } from 'rxjs';
 
 export interface Section {
   name: string;
@@ -77,10 +79,14 @@ export class WorkComponent implements OnInit {
     {
       name: 'Sails.js',
       yearsExp: new Date('1/28/16'),
-    }    
+    }
   ];
+  resumeUrl: Observable<string | null>;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private storage: AngularFireStorage) {
+    const ref = this.storage.ref('RaulGrimaldiResumeENG2019.pdf');
+    this.resumeUrl = ref.getDownloadURL();
+  }
 
   ngOnInit() {
   }

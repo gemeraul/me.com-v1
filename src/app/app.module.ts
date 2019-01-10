@@ -42,6 +42,7 @@ import { CycleItemsService } from './services/cycle-items.service';
 // Firebase
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({
@@ -71,6 +72,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     MatListModule,
     MatSnackBarModule,
     AngularFirestoreModule,
+    AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [CycleItemsService],
