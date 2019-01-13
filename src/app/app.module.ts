@@ -14,17 +14,11 @@ import {
   MatFormFieldModule,
   MatInputModule,
   MatIconModule,
-  MatDatepickerModule,
-  MatNativeDateModule,
   MatDividerModule,
   MatTooltipModule,
-  MatStepperModule,
-  MatExpansionModule,
   MatSnackBarModule,
   MatListModule,
-  MatProgressSpinnerModule,
-  MatCardModule,
-  MatDialogModule
+  MatBottomSheetModule
 } from '@angular/material';
 
 // Components
@@ -34,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
 import { WorkComponent } from './components/work/work.component';
+import { ResumeSelectoreSheet } from './components/work/work.component';
 import { AboutComponent } from './components/about/about.component';
 
 // Services
@@ -55,6 +50,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     ContactComponent,
     SocialMediaComponent,
     WorkComponent,
+    ResumeSelectoreSheet,
     AboutComponent
   ],
   imports: [
@@ -71,11 +67,15 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     MatTooltipModule,
     MatListModule,
     MatSnackBarModule,
+    MatBottomSheetModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [CycleItemsService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ResumeSelectoreSheet
+  ]
 })
 export class AppModule { }

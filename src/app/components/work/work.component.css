@@ -139,3 +139,22 @@ mat-list-item p.content {
 ::ng-deep .mat-list-item.mat-2-line {
     height: 48px !important;
 }
+
+/* This is only for the bottom sheet */
+::ng-deep.title-sheet {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em !important;
+    font-weight: 300 !important;
+    cursor: default;
+}
+
+::ng-deep.sub-sheet {
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em !important;
+    font-weight: 300 !important;
+    cursor: default;
+}
+
+::ng-deep mat-icon {
+    color: #98a8bf;
+}

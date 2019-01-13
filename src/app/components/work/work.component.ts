@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { AngularFireStorage } from '@angular/fire/storage';
 import { Observable } from 'rxjs';
+import { MatBottomSheet, MatBottomSheetRef, MAT_BOTTOM_SHEET_DATA } from '@angular/material';
 
 export interface Section {
   name: string;
@@ -83,7 +84,7 @@ export class WorkComponent implements OnInit {
   ];
   resumeUrl: Observable<string | null>;
 
-  constructor(private router: Router, private storage: AngularFireStorage) {
+  constructor(private router: Router, private storage: AngularFireStorage, private bottomSheet: MatBottomSheet) {
     const ref = this.storage.ref('RaulGrimaldiResumeENG2019.pdf');
     this.resumeUrl = ref.getDownloadURL();
   }
@@ -93,6 +94,32 @@ export class WorkComponent implements OnInit {
 
   goTo(page) {
     this.router.navigateByUrl('/' + page);
+  }
+
+  openBottomSheet(): void {
+    this.bottomSheet.open(ResumeSelectoreSheet, { data: { url: this.resumeUrl } });
+  }
+
+}
+
+@Component({
+  selector: 'resume-selector-sheet',
+  templateUrl: 'resume-selector-sheet.html',
+  styleUrls: ['./work.component.css']
+})
+export class ResumeSelectoreSheet {
+
+  url: string;
+
+  constructor(@Inject(MAT_BOTTOM_SHEET_DATA) public data: any, private bottomSheetRef: MatBottomSheetRef<ResumeSelectoreSheet>) {
+    data.url.subscribe(data => {
+      this.url = data;
+    });
+   }
+
+  openLink(event: MouseEvent): void {
+    this.bottomSheetRef.dismiss();
+    // event.preventDefault();
   }
 
 }

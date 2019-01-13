@@ -11,7 +11,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered is-9 banner-starwars">
           <h1 class="title-option">For your consideration</h1>
-          <a href="{{resumeUrl | async}}" target="_blank">
+          <a (click)="openBottomSheet()">
             <div class="download">Download Resume</div>
           </a>
         </div>
