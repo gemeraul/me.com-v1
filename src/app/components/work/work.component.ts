@@ -85,7 +85,7 @@ export class WorkComponent implements OnInit {
   resumeUrl: Observable<string | null>;
 
   constructor(private router: Router, private storage: AngularFireStorage, private bottomSheet: MatBottomSheet) {
-    const ref = this.storage.ref('RaulGrimaldiResumeENG2019.pdf');
+    const ref = this.storage.ref('RaulGrimaldi.pdf');
     this.resumeUrl = ref.getDownloadURL();
   }
 
